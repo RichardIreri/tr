@@ -1,2 +1,1 @@
-web: gunicorn flasky:app
-release: python flasky.py db upgrade
+web: flask db upgrade; flask translate compile; gunicorn microblog:app
