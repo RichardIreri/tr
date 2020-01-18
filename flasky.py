@@ -2,7 +2,6 @@
 # This is where the application instance is defined.
 
 import os
-import psycopg2
 
 COV = None
 if os.environ.get('FLASK_COVERAGE'):
