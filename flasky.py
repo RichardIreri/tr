@@ -14,11 +14,9 @@ from app.models import User, Role, Follow, Permission, Post, Comment
 from flask_migrate import Migrate, upgrade
 import sys
 import click
-from flask_script import Manager
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 migrate = Migrate(app, db)
-manager = Manager(app)
 
 # Creating an application context
 @app.shell_context_processor
